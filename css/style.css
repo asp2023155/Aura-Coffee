@@ -330,3 +330,28 @@ h6,
     margin-left: 8px;
     transition: transform 0.3s ease;
 }
+
+.btn-read-more:hover {
+    color: var(--light) !important;
+    letter-spacing: 2px;
+}
+
+.btn-read-more:hover i {
+    transform: translateX(5px);
+}
+
+.btn-read-more::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 1px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--dark);
+    transition: width 0.3s ease;
+}
+
+.btn-read-more:hover::after {
+    width: 100%;
+    background-color: var(--light);
+}
