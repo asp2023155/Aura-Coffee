@@ -355,3 +355,147 @@ h6,
     width: 100%;
     background-color: var(--light);
 }
+
+/* Login Page Styles */
+.login-section {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 80px 20px;
+    background: linear-gradient(135deg, rgba(43, 40, 37, 0.8), rgba(232, 143, 42, 0.3)), url('../img/login-bg.webp') center center no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.login-card {
+    background: rgba(43, 40, 37, 0.7);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 3rem;
+    border-radius: 30px;
+    width: 100%;
+    max-width: 450px;
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.5);
+    animation: fadeInDown 0.8s ease-out;
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.login-card h2 {
+    color: var(--primary);
+    font-family: 'Pacifico', cursive;
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.login-card .form-control {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    color: var(--light);
+    padding: 12px 20px;
+    transition: all 0.3s ease;
+}
+
+.login-card .form-control:focus {
+    background: rgba(255, 255, 255, 0.1);
+    border-color: var(--primary);
+    box-shadow: 0 0 15px rgba(232, 143, 42, 0.4);
+}
+
+.login-card .input-group-text {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-right: none;
+    border-radius: 12px 0 0 12px;
+    color: var(--primary);
+}
+
+.login-card .form-control {
+    border-left: none;
+    border-radius: 0 12px 12px 0;
+}
+
+.login-card .form-check-label {
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.forgot-pwd {
+    color: var(--primary);
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+}
+
+.forgot-pwd:hover {
+    color: var(--light);
+    text-decoration: underline;
+}
+
+.btn-login {
+    width: 100%;
+    padding: 12px;
+    font-size: 1.1rem;
+    margin-top: 1rem;
+    background: var(--primary);
+    color: var(--dark);
+    border: none;
+    font-weight: 700;
+}
+
+.btn-login:hover {
+    background: var(--light) !important;
+    color: var(--primary) !important;
+}
+
+.social-login {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 1.5rem;
+}
+
+.social-btn {
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.05);
+    color: var(--light);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.social-btn:hover {
+    background: var(--primary);
+    color: var(--dark);
+    transform: scale(1.2) rotate(10deg);
+}
+
+.signup-link a {
+    color: var(--primary);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.signup-link a:hover {
+    text-decoration: underline;
+}
+
+
